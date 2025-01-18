@@ -55,3 +55,6 @@ jobs:
 
     - name: 'Run Linter'
       run: npx standard -v
+
+    - name: 'Get logs'
+      run: npm audit
