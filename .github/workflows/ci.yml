@@ -56,5 +56,5 @@ jobs:
     - name: 'Run Linter'
       run: npx standard -v
 
-    - name: 'Fix Vulnerabilities'
-      run: npm audit fix --force
+    - name: 'Logs Gathering'
+      run: npm audit
