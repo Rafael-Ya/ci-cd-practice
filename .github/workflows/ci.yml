@@ -57,4 +57,7 @@ jobs:
       run: npx standard -v
 
     - name: 'Logs Gathering'
-      run: npm audit
+      run: npm audit fix --force
+
+    - name: 'git status'
+      run: git status
