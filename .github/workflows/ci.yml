@@ -56,8 +56,5 @@ jobs:
     - name: 'Run Linter'
       run: npx standard -v
 
-    - name: 'Logs Gathering'
-      run: npm audit fix --force
-
     - name: 'git status'
       run: git status
