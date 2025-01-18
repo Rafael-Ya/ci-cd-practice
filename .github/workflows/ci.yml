@@ -55,6 +55,3 @@ jobs:
     
     - name: 'Run Linter'
       run: npx standard -v
-
-    - name: 'git status'
-      run: git status
