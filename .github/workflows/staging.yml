@@ -66,7 +66,7 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       with:
         terraform_version: 1.0.11
-        cli_config_credentials_token: ${{ secrets.TERRAFORM_API_TOKEN }}
+        cli_config_credentials_token: ${{ secrets.ASCASC }}
     
     # ======================================================
     # We need to create a new Terraform resource file and for
