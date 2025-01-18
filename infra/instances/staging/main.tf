@@ -1,6 +1,6 @@
 terraform {
   backend "remote" {
-    organization = "glich-stream"
+    organization = "GithubActionsORG"
 
     workspaces {
       name = "ci-cd-staging"
