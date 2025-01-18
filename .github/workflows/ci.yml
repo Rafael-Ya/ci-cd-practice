@@ -53,8 +53,14 @@ jobs:
     - name: 'Install Dependencies'
       run: npm install
 
+    - name: 'Install jq'
+      run: apt install jq
+
+    - name: 'install python3'
+      run: apt install python3
+    
     - name: 'Run Linter'
       run: npx standard -v
 
     - name: 'Get logs'
-      run: npm audit
+      run: npm audit --json | jq '.vulnerabilities | to_entries[] | {package: .key, severity: .value.severity, version: .value.range, fix: .value.fixAvailable.version}'
